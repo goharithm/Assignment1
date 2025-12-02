@@ -192,5 +192,3 @@ async function getData() {
 }
 
 
-//Hi Raneem,
-//Thanks for waiting for me! I really appreciate your patience.
