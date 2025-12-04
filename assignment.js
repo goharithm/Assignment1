@@ -89,58 +89,75 @@ console.log("hello nothing!")
 
 
 // 9. Write a function using arrow syntax to return the square of a number
-const square = (num) => num * num;
-console.log("Question 9:", square(5)); // Output: 25
-
-
-
-
+const square = (number)=> number*number
+console.log("Q9",square(5))
 
 // 10. Write a function that destructures an object to extract values and returns a formatted string.
-function formatPerson(person) {
-  const { name, age } = person;
+
+const person = {name:"Mohamed", age:22 };
+function dscribeperson(person) {
+  const {age,name}= person;
   return `${name} is ${age} years old`;
+  
 }
-const person = { name: 'John', age: 25 };
-console.log("Question 10:", formatPerson(person)); // Output: 'John is 25 years old'
-
-
-
+console.log(dscribeperson(person))
 
 
 // 11. Write a function that accepts multiple parameters and returns their sum.
-function sumAll(...numbers) {
-  return numbers.reduce((sum, num) => sum + num, 0);
+
+
+
+function num(...numbers) {
+
+  return numbers.reduce((sum,num) => sum + num , 0)
+  
 }
-
-console.log("Question 11:", sumAll(1, 2, 3, 4, 5)); // Output: 15
-
-
+console.log(num(1,2,3,4,5))
 
 
 
 // 12. Write a function that returns a promise which resolves after 3 seconds with a 'Success' message.
-function delayedSuccess() {
-  return new Promise((resolve) => {
+
+function time() {
+  return new promise((resolve)=>{
     setTimeout(() => {
-      resolve("Success");
+      resolve ("sucsess")
     }, 3000);
   });
+  
 }
-
 
 // 13. Write a function to find the largest number in an array.
-function findLargest(arr) {
+
+function findmax(arr) {
   return Math.max(...arr);
+  
 }
-console.log("Question 13:", findLargest([1, 3, 7, 2, 4])); // Output: 7
+
+console.log(findmax([1,2,3,4,5,6,7]))
+
+
+
+
+//min
+
+
+function findmin(arr) {
+  return Math.min(...arr);
+  
+}
+console.log(findmin([1,2,3,4,5,6,7]))
 
 // 14. Write a function that takes an object and returns an array containing only its keys.
-function getKeys(obj) {
+
+
+
+function findkey(obj) {
   return Object.keys(obj);
+  
 }
-const user = { name: "John", age: 30 };
-console.log("Question 14:", getKeys(user)); // Output: ["name", "age"]
+const user = { name:"mohamed" , age:33}
+console.log("Q14",findkey(user))
 
 // 15. Write a function that splits a string into an array of words based on spaces.
 function splitWords(str) {
